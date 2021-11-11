@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+ul{
+    list-style: none;    
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+a:hover{
+    color: #44bd32;
+}
+button,
+input{
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+button{
+    cursor: pointer;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+:root{
+    --header-height: 60px;
+}
+
+header{
+    width: 100%;
+    /* height: 60px; */
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border: 2px solid #999;
+}
+
+.search{
+    position: relative;
+}
+.search i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: .5s;
+}
+
+.search i:hover{
+    color: #74b9ff;
+}
+.search .fa-search{
+    left: .3rem;
+}
+.search .fa-microphone{
+    right: .4rem;
+}
+
+.search input.search-stock{
+    border: 2px solid #999;
+    border-radius: .4rem;
+    padding: 6px;
+    padding-left: 1.45rem;
+    transition: .4s border;
+}
+
+.search input.search-stock:focus{
+    border: 3px solid #2d3436;
+    background: #f1f2f6;
+}
+
+/* Left Container */
+.left-container{
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem;
+}
+
+.left-container .number-group{
+    display: flex;
+    column-gap: 1rem;
+}
+.number-item{
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+    line-height: 1.25rem;
+}
+
+
+.number-group .number-title{
+    font-weight: bold;
+    font-size: 0.875rem;
+    text-align: center;
+    
+}
+
+.number-group .number-description{
+    font-weight: bolder;
+    color: #44bd32;
+}
+
+
+/* Right Container */
+
+.right-container{
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+}
+
+.right-container .category-group{
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem;
+}
+.category-item{
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+}
+
+.category-icon{
+    font-size: 1.5rem;
+}
+
+.category-title{
+    font-size: 0.875rem;
+    font-weight: bolder;
+}
+
+.user-container{
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+}
+
+
+/* main */
+main{
+    width: 100%;
+    height: calc( 100vh - var(--header-height));
+    display: flex;
+}
+    /* sidebar */
+section.sidebar{
+    width: 20%;
+    height: 100%;
+    background:#A97659; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+    padding: 1.5rem;
+}
+
+section.sidebar  a{
+    font-weight: bolder;
+    color: #fff;
+    font-size: 1.15rem;
+    transition: .4s;
+    cursor: pointer;
+}
+
+
+section.sidebar a:hover{
+    color: #fbc531;
+    transform: translateY(-5px);
+}
+
+/* graph-container */
+section.graph-container{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+    /* graph-container Header */
+.graph-container .company-header{
+    width: 100%;
+    height: var(--header-height);
+    /* background: #fa0; */
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    column-gap: 1.25rem;
+    padding: 2rem;
+}
+
+.company-header .company-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: .5rem;
+}
+
+.company-info h1{
+    font-size: 1.05rem;
+    font-weight: bolder;
+}
+
+.company-info h2{
+    font-size: 0.95rem;
+    font-weight: bold;
+}
+.company-info i{
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+
+.stock-info h1,
+.stock-radio h1{
+    font-size: 1.15rem;
+    color: #44bd32;
+}
+
+    /* graph-container Body */
+.company-body{
+    width: 100%;
+    height: 100%;
+    padding: 2rem 5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5rem;
+    row-gap: 3rem;
+}
+
+
+.company-body .graph{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.25rem;
+    box-shadow: 2px 5px 12px -3px #999;
+}
+.graph .graph-item img{
+    max-width: 100%;
+    height: 100%;
+    background-size: cover;
+}

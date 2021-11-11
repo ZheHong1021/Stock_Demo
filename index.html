@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>股票切版練習</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css' integrity='sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==' crossorigin='anonymous'/>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="left-container">
+            <div class="search">
+                <label for="go-search"><i class="fas fa-search"></i></label>
+                <input id="go-search" class='search-stock' type="text"  placeholder="例: 台積電2330"/>
+                <i class="fas fa-microphone"></i>
+            </div>
+                
+            <div class="number-group">
+                <div class="number-item">
+                    <h1 class="number-title">加權<br>指數</h1>
+                    <div class="number-description">
+                        <p>17452.52</p>
+                        <p>107.13(0.64%)</p>
+                    </div>
+                </div>
+                <div class="number-item">
+                    <h1 class="number-title">櫃買<br>指數</h1>
+                    <div class="number-description">
+                        <p>217.39</p>
+                        <p>0.12(0.06%)</p>
+                    </div>
+                </div>
+                <div class="number-item">
+                    <h1 class="number-title">台指<br>近</h1>
+                    <div class="number-description">
+                        <p>17452.52</p>
+                        <p>84.00(0.48%)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-container">
+            <div class="category-group">
+                <a class="category-item">
+                    <i class="fas fa-fire-alt category-icon"></i>
+                    <h1 class="category-title">熱門主題</h1>
+                </a>
+                <a class="category-item">
+                    <i class="fas fa-globe-americas category-icon"></i>
+                    <h1 class="category-title">ETF</h1>
+                </a>
+                <a class="category-item">
+                    <i class="far fa-lightbulb category-icon"></i>
+                    <h1 class="category-title">個設</h1>
+                </a>
+            </div>
+            <a class="user-container">
+                <i class="fas fa-user-tie category-icon"></i>
+                <h1 class="category-title">王小明</h1>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="sidebar">
+            <a href='#'>個人財務分析</a>
+            <a href='#'>我的投資組合</a>
+            <a href='#'>交易</a>
+            <a href='#'>策略</a>
+            <a href='#'>庫存</a>
+            <a href='#'>近期觀察</a>
+            <a href='#'>專案報導</a>
+        </section>
+
+        <section class="graph-container">
+            <div class="company-header">
+                <div class="company-info favorite">
+                    <i class="far fa-heart"></i>
+                    <h2>追蹤</h2>
+                </div>
+                <div class="company-info company-title">
+                    <h1>台積電</h1>
+                    <h2>2330 上市</h2>
+                </div>
+                <div class="company-info stock-info">
+                    <h1>606.00</h1>
+                    <h2>量: 18,435 張</h2>
+                </div>
+                <div class="company-info stock-radio">
+                    <h1>-6.00 (-0.98)</h1>
+                    <h2>更新: 11/11 收盤</h2>
+                </div>
+            </div>
+
+            <div class="company-body">
+                <div class="graph">
+                    <div class="group-item">
+                    </div>
+                </div>
+                <div class="graph">
+                    <div class="group-item">
+                    </div>
+                </div>
+                <div class="graph">
+                    <div class="group-item">
+                    </div>
+                </div>
+                <div class="graph">
+                    <div class="group-item">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+    </main>
+    
+</body>
+</html>
